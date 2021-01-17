@@ -4,13 +4,13 @@
 <body>
     <%- include('./partials/nav.ejs') %>
     <div class="insert-med content">
-        <form>
+        <form action='/meds' method="POST">
             <label for="title">Med Name:</label>
-            <input type="text" id="title" required>
+            <input type="text" id="title" name= "title" required>
             <label for="composition">composition</label>
-            <input type="text" id="composition" required>
+            <input type="text" id="composition" name="composition" required>
             <label for="info">Details:</label>
-            <textarea id="info"></textarea>
+            <textarea id="info" name="info"></textarea>
             <button>Submit</button>
         </form>
     </div>

@@ -7,10 +7,12 @@
         <h2>All Med</h2>
         <% if(meds.length>0) { %>
             <% meds.forEach(med =>{ %>
-
-                <h3 class="title"><%= med.title %></h3>
-                <p class="snippet"><%= med.snippet %></p>
-
+                <a class="single" href="/med/<%= med._id %>">
+                    <h3 class="title"><%= med.title %></h3>
+                    <p class="snippet"><%= med.composition %></p>
+                    
+                <br>
+                </a>
             <% }) %>
         <% } else { %>
             <h4>Nothing to display</h4>
