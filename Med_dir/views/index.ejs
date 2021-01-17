@@ -1,0 +1,21 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="all-med content">
+        <h2>All Med</h2>
+        <% if(meds.length>0) { %>
+            <% meds.forEach(med =>{ %>
+
+                <h3 class="title"><%= med.title %></h3>
+                <p class="snippet"><%= med.snippet %></p>
+
+            <% }) %>
+        <% } else { %>
+            <h4>Nothing to display</h4>
+        <% } %>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

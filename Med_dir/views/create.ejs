@@ -1,0 +1,19 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="insert-med content">
+        <form>
+            <label for="title">Med Name:</label>
+            <input type="text" id="title" required>
+            <label for="composition">composition</label>
+            <input type="text" id="composition" required>
+            <label for="info">Details:</label>
+            <textarea id="info"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
